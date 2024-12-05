@@ -23,12 +23,11 @@ h1 {
     top: 15px;
     left: 15px;
     width: 30px;
-    height: 25px;
+    height: 30px;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: transform 0.3s ease-in-out;
 }
 
 .menu-btn__burger {
@@ -52,11 +51,11 @@ h1 {
 }
 
 .menu-btn__burger::before {
-    transform: translateY(-10px);
+    top: -10px; /* Adjusted spacing for even lines */
 }
 
 .menu-btn__burger::after {
-    transform: translateY(10px);
+    top: 10px; /* Adjusted spacing for even lines */
 }
 
 .menu-btn.open .menu-btn__burger {
@@ -81,32 +80,4 @@ h1 {
     color: #fff;
     display: flex;
     align-items: center;
-    justify-content: center;
-    transition: left 0.3s ease-in-out;
-}
-
-.nav__list {
-    list-style: none;
-    text-align: center;
-    padding: 0;
-}
-
-.nav__list li {
-    margin: 20px 0;
-}
-
-.nav__list li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 2em;
-}
-
-.nav.open {
-    left: 0;
-}
-
-@media (max-width: 600px) {
-    h1 {
-        font-size: 1.5em;
-    }
-}
+    justify
