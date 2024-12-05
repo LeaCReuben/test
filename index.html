@@ -6,13 +6,12 @@
     <title>Basic Website</title>
 </head>
 <body style="margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif;">
-    <header style="position: -webkit-sticky; position: sticky; top: 0; background-color: #333; color: #fff; padding: 10px 0; text-align: center; display: flex; justify-content: center; align-items: center;">
-        <h1 style="margin: 0; font-size: 2em; font-weight: bold;">Hello!</h1>
-        <div class="menu-btn" style="position: absolute; top: 10px; right: 10px; width: 30px; height: 25px; cursor: pointer; display: flex; align-items: center; justify-content: center;">
-            <div class="menu-btn__burger" style="width: 30px; height: 2px; background-color: #fff; position: relative;">
-                <div style="position: absolute; top: -6px; width: 30px; height: 2px; background-color: #fff;"></div>
-                <div style="position: absolute; top: 6px; width: 30px; height: 2px; background-color: #fff;"></div>
-            </div>
+    <header style="position: -webkit-sticky; position: sticky; top: 0; background-color: #333; color: #fff; padding: 10px 0; display: flex; justify-content: space-between; align-items: center;">
+        <h1 style="margin: 0; font-size: 2em; font-weight: bold; flex-grow: 1; text-align: center;">Hello!</h1>
+        <div class="menu-btn" style="margin-right: 10px; width: 30px; height: 25px; cursor: pointer; display: flex; flex-direction: column; justify-content: space-between; align-items: center;">
+            <div style="width: 30px; height: 2px; background-color: #fff;"></div>
+            <div style="width: 30px; height: 2px; background-color: #fff;"></div>
+            <div style="width: 30px; height: 2px; background-color: #fff;"></div>
         </div>
     </header>
     <main style="padding: 20px;">
