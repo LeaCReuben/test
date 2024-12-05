@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +8,15 @@
 <body style="margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif;">
     <header style="position: -webkit-sticky; position: sticky; top: 0; background-color: #333; color: #fff; padding: 10px 0; text-align: center;">
         <h1 style="margin: 0; font-size: 2em; font-weight: bold;">Hello!</h1>
+        <div class="menu-btn" style="position: absolute; top: 10px; right: 10px; width: 30px; height: 25px; cursor: pointer; display: flex; align-items: center; justify-content: center;">
+            <div class="menu-btn__burger" style="width: 30px; height: 3px; background-color: #fff; position: relative;">
+                <div style="position: absolute; top: -8px; width: 30px; height: 3px; background-color: #fff;"></div>
+                <div style="position: absolute; top: 8px; width: 30px; height: 3px; background-color: #fff;"></div>
+            </div>
+        </div>
     </header>
     <main style="padding: 20px;">
-        <p>Scroll down to see the sticky header in action.</p>
-        <div style="height: 2000px;"></div> <!-- To demonstrate the sticky effect -->
+        <p>Welcome to the website! The header stays at the top as you scroll.</p>
     </main>
 </body>
 </html>
