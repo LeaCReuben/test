@@ -1,0 +1,11 @@
+body { font-family: Arial, sans-serif; /* Default font for the body */ margin: 0; padding: 0; box-sizing: border-box; }h1 { font-size: 2em; font-weight: bold; } sb { font-family: 'Arial Black', Gadget, sans-serif; }
+
+sb { font-family: 'Arial Black', Gadget, sans-serif; }
+
+h1 { font-size: 2em; font-weight: bold; }
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5em;
+    }
+}
