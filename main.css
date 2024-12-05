@@ -1,7 +1,20 @@
-body { font-family: Arial, sans-serif; /* Default font for the body */ margin: 0; padding: 0; box-sizing: border-box; }
-sb { font-family: 'Arial Black', Gadget, sans-serif; }
+body {
+    font-family: Arial, sans-serif; /* Default font for the body */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center; /* Centers all text in the body */
+}
 
-h1 { font-size: 2em; font-weight: bold; text-align: center;}
+sb {
+    font-family: 'Arial Black', Gadget, sans-serif;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center; /* Centers h1 text */
+}
 
 @media (max-width: 600px) {
     h1 {
