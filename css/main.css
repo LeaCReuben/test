@@ -2,6 +2,10 @@ a {
     font-family: 'Arial Black', sans-serif;
 }
 
+p {
+    font-family: 'Arial', sans-serif;
+    font-size: 22px;
+}
 body {
     margin: 0;
     padding: 0;
