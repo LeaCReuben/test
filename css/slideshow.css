@@ -1,8 +1,9 @@
 .slideshowContainer {
     position: relative;
-    max-width: 600px;
+    max-width: 575px;
     margin: auto;
     overflow: hidden;
+    border-radius: 12.5px;
 }
 
 .slideshow {
