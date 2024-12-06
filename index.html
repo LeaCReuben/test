@@ -42,8 +42,6 @@
             height: 2px;
             background-color: #FDFDFD;
             border-radius: 3px;
-            transition: all 0.3s ease;
-            transform-origin: center; /* Pivot from center */
         }
 
         .menu-btn div:nth-child(2) {
@@ -51,16 +49,29 @@
             margin-bottom: 3px;
         }
 
-        .menu-btn.open div:nth-child(1) {
-            transform: rotate(45deg) translate(0, 6px);
+        .menu {
+            position: fixed;
+            top: 0;
+            left: -100%; /* Initially hidden off-screen */
+            width: 100%;
+            height: 100%;
+            background-color: rgba(29, 28, 43, 0.95);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: left 0.3s ease;
         }
 
-        .menu-btn.open div:nth-child(2) {
-            opacity: 0;
+        .menu.open {
+            left: 0; /* Slide in */
         }
 
-        .menu-btn.open div:nth-child(3) {
-            transform: rotate(-45deg) translate(0, -6px);
+        .menu a {
+            color: #FDFDFD;
+            font-size: 24px;
+            text-decoration: none;
+            margin: 15px 0;
         }
 
         .App-logo {
@@ -85,9 +96,16 @@
     <main>
         <p>Welcome to the SF3D website! The header stays at the top as you scroll.</p>
     </main>
+    <div class="menu" id="menu">
+        <a href="#landing">Landing</a>
+        <a href="#shop">Shop</a>
+        <a href="#news">News</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact Us</a>
+    </div>
     <script>
         function toggleMenu() {
-            document.querySelector('.menu-btn').classList.toggle('open');
+            document.getElementById('menu').classList.toggle('open');
         }
     </script>
 </body>
