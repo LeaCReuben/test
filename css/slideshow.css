@@ -33,12 +33,19 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #1a73e8; /* Fresh blue color */
     color: white;
     border: none;
     padding: 10px;
     cursor: pointer;
     border-radius: 50%;
+    font-size: 18px; /* Larger font size for better visibility */
+    opacity: 0.8; /* Slight transparency for a modern look */
+    transition: opacity 0.3s; /* Smooth hover effect */
+}
+
+.prev:hover, .next:hover {
+    opacity: 1; /* Fully opaque on hover */
 }
 
 .prev {
