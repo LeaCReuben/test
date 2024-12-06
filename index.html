@@ -19,7 +19,7 @@
             top: 0;
             width: 100%;
             background-color: rgba(29, 28, 43, 0.95);
-            padding: 10px 20px;
+            padding: 10px 0;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -95,7 +95,9 @@
         .App-logo {
             width: 67.5px;
             height: auto;
-            margin: auto; /* Center the logo */
+            position: relative; /* Center the logo horizontally */
+            left: 50%;
+            transform: translateX(-50%);
         }
 
         main {
@@ -105,12 +107,12 @@
 </head>
 <body>
     <header>
+        <img src="SF3D.svg" alt="SF3D Logo" class="App-logo">
         <div class="menu-btn" onclick="toggleMenu()">
             <div></div>
             <div></div>
             <div></div>
         </div>
-        <img src="SF3D.svg" alt="SF3D Logo" class="App-logo">
     </header>
     <main>
         <p>Welcome to the SF3D website! The header stays at the top as you scroll.</p>
