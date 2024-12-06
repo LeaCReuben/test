@@ -22,8 +22,9 @@
 
 .text {
     position: absolute;
-    background: rgba(0, 0, 0, 1);
+    background: rgba(0, 0, 0, 0.5); /* Adjusted transparency */
     color: #fff;
+    padding: 10px; /* Added padding for better visibility */
     top: 20px;
     left: 20px;
 }
