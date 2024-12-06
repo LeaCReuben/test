@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="css/marquee.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/hamburgermenu.js" defer></script>
-    <script type="module" src="js/threejsmain.js"><script>
 </head>
 <body>
     <header>
@@ -25,7 +24,13 @@
             <span style="font-size: 35px;" class="bt">Everything is at least 10% off!</span>
         </div>
         <br>
-        <div id="modelContainer"></div>
+        <canvas id="canvas"></canvas> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script> 
+        <script src="https://threejs.org/examples/js/loaders/STLLoader.js"></script> 
+        <script type="module"> 
+            import { init } from './threejs-setup.js';
+            init();
+        </script>
     </main>
     <div class="menu" id="menu">
         <a href="index.html">Landing</a>
