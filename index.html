@@ -23,7 +23,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            z-index: 1000; /* Ensure header is always on top */
+            z-index: 1000;
         }
 
         .menu-btn {
@@ -37,7 +37,7 @@
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
-            transform: translateY(-50%); /* Center vertically */
+            transform: translateY(-50%);
         }
 
         .menu-btn div {
@@ -46,7 +46,7 @@
             background-color: #FDFDFD;
             border-radius: 3px;
             transition: all 0.3s ease;
-            transform-origin: center; /* Set pivot point to center */
+            transform-origin: center;
         }
 
         .menu-btn div:nth-child(2) {
@@ -69,20 +69,20 @@
         .menu {
             position: fixed;
             top: 0;
-            left: -100%; /* Initially hidden off-screen */
+            left: -100%;
             width: 100%;
             height: 100%;
-            background-color: rgba(29, 28, 43, 0.95); /* Semi-transparent */
+            background-color: rgba(29, 28, 43, 0.95);
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             transition: left 0.3s ease;
-            z-index: 999; /* Below header */
+            z-index: 999;
         }
 
         .menu.open {
-            left: 0; /* Slide in */
+            left: 0;
         }
 
         .menu a {
@@ -92,14 +92,17 @@
             margin: 15px 0;
         }
 
-        .App-logo {
-            width: 67.5px;
-            height: auto;
-            margin: 0 auto; /* Center the logo horizontally */
+        .center-svg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 100px; /* Adjust size as needed */
+            max-height: 100px; /* Adjust size as needed */
         }
 
         main {
-            padding: 80px 20px 20px; /* Added top padding to avoid header overlap */
+            padding: 80px 20px 20px;
         }
     </style>
 </head>
@@ -110,7 +113,7 @@
             <div></div>
             <div></div>
         </div>
-        <img src="SF3D.svg" alt="SF3D Logo" class="App-logo">
+        <img src="sf3d.svg" alt="SF3D Logo" class="center-svg">
     </header>
     <main>
         <p>Welcome to the SF3D website! The header stays at the top as you scroll.</p>
