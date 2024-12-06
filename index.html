@@ -8,6 +8,7 @@
     
     <link rel="stylesheet" href="css/marquee.css">
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/slideshowMain.js"></script>
     <script src="js/hamburgermenu.js" defer></script>
 </head>
 <body>
@@ -20,7 +21,19 @@
         <img src="resources/LT3D.svg" alt="LT3D" class="center-svg">
     </header>
     <main>
-        <h1 class="bt">We are LT3D!</h1>
+        <div class="slideshowContainer">
+            <div class="slideshow">
+                <div class="slideOne">
+                    <img src="/resources/trumpPoop" alt="Trump as a cartoon faeces with tentacles">
+                    <div class="text">
+                        <h2 class="bt"> We Are LT3D </h2>
+                        <p class="bt"> We do it, you buy it. The cycle.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="previousSlide" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="nextSlide" onclick="changeSlide(1)">&#10095;</button>
+        </div>
         <br>
         <div class="marquee">
             <span style="font-size: 35px;" class="bt">Everything is at least 10% off!</span>
