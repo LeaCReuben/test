@@ -15,14 +15,15 @@
         }
 
         header {
-            position: -webkit-sticky;
-            position: sticky;
+            position: fixed;
             top: 0;
-            background-color: transparent;
+            width: 100%;
+            background-color: rgba(29, 28, 43, 0.95);
             padding: 10px 0;
             display: flex;
             align-items: center;
             justify-content: center;
+            z-index: 1000; /* Ensure header is always on top */
         }
 
         .menu-btn {
@@ -35,6 +36,7 @@
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
+            z-index: 1001; /* Ensure button is above the menu */
         }
 
         .menu-btn div {
@@ -42,11 +44,24 @@
             height: 2px;
             background-color: #FDFDFD;
             border-radius: 3px;
+            transition: all 0.3s ease;
         }
 
         .menu-btn div:nth-child(2) {
             margin-top: 3px;
             margin-bottom: 3px;
+        }
+
+        .menu-btn.open div:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .menu-btn.open div:nth-child(2) {
+            opacity: 0;
+        }
+
+        .menu-btn.open div:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
         }
 
         .menu {
@@ -61,6 +76,7 @@
             justify-content: center;
             align-items: center;
             transition: left 0.3s ease;
+            z-index: 1000; /* Below header and button */
         }
 
         .menu.open {
@@ -74,22 +90,13 @@
             margin: 15px 0;
         }
 
-        .menu .close-btn {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            cursor: pointer;
-            font-size: 24px;
-            color: #FDFDFD; /* Same color as the hamburger menu */
-        }
-
         .App-logo {
             width: 67.5px;
             height: auto;
         }
 
         main {
-            padding: 20px;
+            padding: 80px 20px 20px; /* Added top padding to avoid header overlap */
         }
     </style>
 </head>
@@ -106,7 +113,7 @@
         <p>Welcome to the SF3D website! The header stays at the top as you scroll.</p>
     </main>
     <div class="menu" id="menu">
-        <div class="close-btn" onclick="toggleMenu()">✕</div>
+        <div class="menu-btn" onclick="toggleMenu()">✕</div>
         <a href="#landing">Landing</a>
         <a href="#shop">Shop</a>
         <a href="#news">News</a>
@@ -115,6 +122,7 @@
     </div>
     <script>
         function toggleMenu() {
+            document.querySelector('.menu-btn').classList.toggle('open');
             document.getElementById('menu').classList.toggle('open');
         }
     </script>
