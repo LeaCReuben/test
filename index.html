@@ -17,12 +17,13 @@
 
         header {
             position: fixed;
-            top: 0;
+            top: 5px; /* Added padding from the top */
             width: 100%;
             background-color: rgba(29, 28, 43, 0.95);
             padding: 10px 20px;
             display: flex;
             align-items: center;
+            justify-content: center;
             z-index: 1000; /* Ensure header is always on top */
         }
 
@@ -94,8 +95,9 @@
 
         .center-svg {
             position: absolute;
+            top: 50%;
             left: 50%;
-            transform: translateX(-50%);
+            transform: translate(-50%, -50%);
             max-width: 100px; /* Adjust size as needed */
             max-height: 100px; /* Adjust size as needed */
         }
@@ -112,7 +114,7 @@
             <div></div>
             <div></div>
         </div>
-        <img src="SF3D.svg" alt="SF3D Logo" class="center-svg">
+        <img src="sf3d.svg" alt="SF3D Logo" class="center-svg">
     </header>
     <main>
         <p>Welcome to the SF3D website! The header stays at the top as you scroll.</p>
