@@ -44,6 +44,7 @@
             border-radius: 3px;
             transition: all 0.3s ease;
             transform-origin: center;
+            opacity: 0.8; /* Initial opacity */
         }
 
         .menu-btn div:nth-child(2) {
@@ -52,7 +53,7 @@
         }
 
         .menu-btn.open div:nth-child(1) {
-            transform: rotate(45deg) translate(6px, 6px);
+            transform: rotate(45deg) translate(4px, 4px);
         }
 
         .menu-btn.open div:nth-child(2) {
@@ -60,7 +61,11 @@
         }
 
         .menu-btn.open div:nth-child(3) {
-            transform: rotate(-45deg) translate(6px, -6px);
+            transform: rotate(-45deg) translate(4px, -4px);
+        }
+
+        .menu-btn.open div {
+            opacity: 1; /* Full opacity on click */
         }
 
         .App-logo {
