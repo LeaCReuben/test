@@ -28,7 +28,7 @@
 
         .menu-btn {
             position: absolute;
-            top: 15px;
+            top: 50%;
             left: 15px;
             width: 24px;
             height: 18px;
@@ -37,6 +37,7 @@
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
+            transform: translateY(-50%); /* Center vertically */
         }
 
         .menu-btn div {
@@ -104,12 +105,12 @@
 </head>
 <body>
     <header>
-        <img src="SF3D.svg" alt="SF3D Logo" class="App-logo">
         <div class="menu-btn" onclick="toggleMenu()">
             <div></div>
             <div></div>
             <div></div>
         </div>
+        <img src="SF3D.svg" alt="SF3D Logo" class="App-logo">
     </header>
     <main>
         <p>Welcome to the SF3D website! The header stays at the top as you scroll.</p>
@@ -129,4 +130,3 @@
     </script>
 </body>
 </html>
-
