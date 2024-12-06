@@ -5,7 +5,9 @@ a {
 p {
     font-family: 'Arial', sans-serif;
     font-size: 22px;
+    text-align: center;
 }
+
 body {
     margin: 0;
     padding: 0;
