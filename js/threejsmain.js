@@ -18,7 +18,7 @@ function init() {
     scene.add(directionalLight);
 
     const loader = new THREE.STLLoader();
-    loader.load('/resources/amonguskeycap.stl', function (geometry) {
+    loader.load('../resources/amonguskeycap.stl', function (geometry) {
         const material = new THREE.MeshPhongMaterial({ color: 0xff0000 }); // Red color
         model = new THREE.Mesh(geometry, material);
         model.rotation.x = -0.5 * Math.PI; // Adjust model orientation
