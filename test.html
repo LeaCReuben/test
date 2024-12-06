@@ -1,8 +1,16 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Model with Model Viewer</title>
+    <style>
+        body { margin: 0; }
+        canvas { display: block; }
+    </style>
 </head>
 <body>
-    <model-viewer src="/resources/amonguskeycap.stl" alt="A 3D model of an Among Us keycap" auto-rotate camera-controls></model-viewer>
+    <model-viewer src="/resources/amonguskeycap.stl" alt="A 3D model of an Among Us keycap" camera-controls></model-viewer>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </body>
 </html>
