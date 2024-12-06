@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic Website</title>
+    <title>SF3D</title>
     <style>
         body {
             margin: 0;
@@ -40,11 +40,9 @@
         .menu-btn div {
             width: 24px;
             height: 2px;
-            background-color: rgba(253, 253, 253, 0.8);
+            background-color: #FDFDFD;
             border-radius: 3px;
             transition: all 0.3s ease;
-            transform-origin: center;
-            opacity: 0.8; /* Initial opacity */
         }
 
         .menu-btn div:nth-child(2) {
@@ -62,10 +60,6 @@
 
         .menu-btn.open div:nth-child(3) {
             transform: rotate(-45deg) translate(4.35px, -4.35px);
-        }
-
-        .menu-btn.open div {
-            opacity: 1; /* Full opacity on click */
         }
 
         .App-logo {
@@ -88,7 +82,7 @@
         <img src="SF3D.svg" alt="SF3D Logo" class="App-logo">
     </header>
     <main>
-        <p>Welcome to the website! The header stays at the top as you scroll.</p>
+        <p>Welcome to the SF3D website! The header stays at the top as you scroll.</p>
     </main>
     <script>
         function toggleMenu() {
