@@ -52,7 +52,7 @@
         }
 
         .menu-btn.open div:nth-child(1) {
-            transform: rotate(45deg) translate(2px, 2px);
+            transform: rotate(45deg) translate(3px, 3px);
         }
 
         .menu-btn.open div:nth-child(2) {
@@ -60,7 +60,7 @@
         }
 
         .menu-btn.open div:nth-child(3) {
-            transform: rotate(-45deg) translate(2px, -2px);
+            transform: rotate(-45deg) translate(3px, -3px);
         }
 
         .App-logo {
@@ -75,7 +75,7 @@
 </head>
 <body>
     <header>
-        <div class="menu-btn">
+        <div class="menu-btn" onclick="toggleMenu()">
             <div></div>
             <div></div>
             <div></div>
@@ -86,9 +86,9 @@
         <p>Welcome to the website! The header stays at the top as you scroll.</p>
     </main>
     <script>
-        window.onload = function() {
-            document.querySelector('.menu-btn').classList.add('open');
-        };
+        function toggleMenu() {
+            document.querySelector('.menu-btn').classList.toggle('open');
+        }
     </script>
 </body>
 </html>
