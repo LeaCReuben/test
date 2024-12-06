@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SF3D</title>
+    <title>Basic Website</title>
     <style>
         body {
             margin: 0;
@@ -43,6 +43,7 @@
             background-color: rgba(253, 253, 253, 0.8);
             border-radius: 3px;
             transition: all 0.3s ease;
+            transform-origin: center;
         }
 
         .menu-btn div:nth-child(2) {
@@ -51,7 +52,7 @@
         }
 
         .menu-btn.open div:nth-child(1) {
-            transform: rotate(45deg) translate(4px, 4px);
+            transform: rotate(45deg) translateY(6px);
         }
 
         .menu-btn.open div:nth-child(2) {
@@ -59,7 +60,7 @@
         }
 
         .menu-btn.open div:nth-child(3) {
-            transform: rotate(-45deg) translate(4px, -4px);
+            transform: rotate(-45deg) translateY(-6px);
         }
 
         .App-logo {
@@ -72,22 +73,4 @@
         }
     </style>
 </head>
-<body>
-    <header>
-        <div class="menu-btn" onclick="toggleMenu()">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-        <img src="SF3D.svg" alt="SF3D Logo" class="App-logo">
-    </header>
-    <main>
-        <p>Welcome to the website! The header stays at the top as you scroll.</p>
-    </main>
-    <script>
-        function toggleMenu() {
-            document.querySelector('.menu-btn').classList.toggle('open');
-        }
-    </script>
-</body>
-</html>
+<body
