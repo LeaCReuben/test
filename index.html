@@ -38,9 +38,17 @@
                 renderer.setSize(window.innerWidth, window.innerHeight);
                 document.body.appendChild(renderer.domElement);
 
+                // Add lighting
+                const ambientLight = new THREE.AmbientLight(0x404040); // Soft white light
+                scene.add(ambientLight);
+
+                const directionalLight = new THREE.DirectionalLight(0xffffff, 1); // Strong white light
+                directionalLight.position.set(5, 5, 5).normalize();
+                scene.add(directionalLight);
+
                 const loader = new THREE.STLLoader();
                 loader.load('/resources/amonguskeycap.stl', function (geometry) {
-                    const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+                    const material = new THREE.MeshPhongMaterial({ color: 0x00ff00 });
                     model = new THREE.Mesh(geometry, material);
                     scene.add(model);
                     animate();
