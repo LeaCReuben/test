@@ -1,7 +1,3 @@
-a {
-    font-family: 'Arial Black', sans-serif;
-}
-
 p {
     font-family: 'Arial', sans-serif;
     font-size: 22px;
@@ -91,6 +87,7 @@ header {
 .menu a {
     color: #FDFDFD;
     font-size: 28px;
+    font-family: 'Arial Black', sans-serif;
     text-decoration: none;
     margin: 15px 0;
 }
